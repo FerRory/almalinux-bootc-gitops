@@ -12,3 +12,7 @@ RUN systemctl enable lm_sensors sysstat tuned fstrim.timer podman.socket podman-
 RUN ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
 
 RUN bootc container lint
+
+LABEL org.opencontainers.image.source="https://github.com/ferrory/almalinux-bootc-gitops"
+LABEL org.opencontainers.image.description="My AlmaLinux Bootc GitOps bootable container"
+LABEL org.opencontainers.image.license="MIT"
